@@ -64,7 +64,7 @@ contract AgentIDPass is ERC721, Ownable {
     /// @param agentId_ Address of the official Agent ID contract.
     /// @param maxSupply_ Hard cap (10,000 for the production deployment).
     /// @param owner_ Address that may open/close minting.
-    constructo(address agentId_, uint256 maxSupply_, address owner_)   
+    constructor(address agentId_, uint256 maxSupply_, address owner_)   
         ERC721("AgentID Pass", "AIDP")
                 Ownable(owner_)
     {
